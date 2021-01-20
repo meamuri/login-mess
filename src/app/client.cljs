@@ -4,16 +4,22 @@
   (:require [reagent.core :as reagent]
             [reagent.dom :as rdom]))
 
-(defn ^:export refresh
-  "Refresh hook for devtools"
-  [])
-
 (defn ^:private app 
   "Application entry point component"
   []
   [:div "hello world"])
 
+(defn ^:private mount
+  "Mount main component to the root element"
+  []
+  (rdom/render [app] (.getElementById js/document "root")))
+
 (defn ^:export init
   "Entry point for an application"
   []
-  (rdom/render [app] (.getElementById js/document "root")))
+  (mount))
+
+(defn ^:export refresh
+  "Refresh hook for devtools"
+  []
+  (mount))

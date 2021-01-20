@@ -4,4 +4,5 @@
                  :output-dir "resources/public/js/main"
                  :asset-path "/js/main"
                  :modules {:main {:init-fn app.client/init
-                                  :entries [app.client]}}}}}
+                                  :entries [app.client]}}
+                 :devtools {:after-load app.client/refresh}}}}
