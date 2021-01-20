@@ -1,0 +1,8 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.10.1"}}
+ :aliases {:dev {:extra-paths ["env/dev"]
+                 :extra-deps {org.clojure/clojurescript {:mvn/version "1.10.764"}
+                              thheller/shadow-cljs {:mvn/version "2.11.14"}
+                              binaryage/devtools {:mvn/version "1.0.2"}
+                              
+                              reagent/reagent {:mvn/version "1.0.0" :exclusions [cljsjs/react cljsjs/react-dom]}}}}}
