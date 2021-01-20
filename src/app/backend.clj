@@ -2,11 +2,13 @@
   "Server application for serving content and providing REST API"
   {:author "Roman Dronov"}
   (:require
-   [org.httpkit.server :as http]
    [reitit.ring :as ring]))
 
 
-
-(defn run
-  []
-  )
+(def handler
+  (ring/ring-handler
+   (ring/router
+    [])
+   (ring/routes
+    (ring/create-resource-handler {:path "/" :root "public"})
+    (ring/create-default-handler {:not-found {constantly {:status 404 :body {:message "Cannot found the resource"}}}}))))

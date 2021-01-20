@@ -5,4 +5,5 @@
                  :asset-path "/js/main"
                  :modules {:main {:init-fn app.client/init
                                   :entries [app.client]}}
-                 :devtools {:after-load app.client/refresh}}}}
+                 :devtools {:after-load app.client/refresh
+                            :watch-dir "resources/public"}}}}
