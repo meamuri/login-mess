@@ -1,0 +1,28 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    display: flex;    
+    align-items: center;
+    flex-flow: column;    
+}
+
+#centred {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 480px;
+}
+
+#form-container {
+    background-color: #ddd;
+    padding: 15px 15px 15px 15px;
+    border-radius: 15px;
+}

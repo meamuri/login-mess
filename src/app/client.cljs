@@ -7,7 +7,20 @@
 (defn ^:private app 
   "Application entry point component"
   []
-  [:div "hello world"])
+  [:div#app 
+   [:section#centred
+    [:div#content
+     [:div#logo 
+      [:img {:style {:width 300 :height 150}}]]
+     [:div#form-container
+      [:form#login-form
+       [:label {:for "login-input"} "Username"]
+       [:input#login-input {:type "text"}]
+       [:br]
+       [:label {:for "password-input"} "Password"]
+       [:input#password-input {:type "password"}]]]]
+    [:div#footer
+     [:p {:dangerouslySetInnerHTML {:__html "&copy; 2021, created by Roman Dronov"}}]]]])
 
 (defn ^:private mount
   "Mount main component to the root element"
