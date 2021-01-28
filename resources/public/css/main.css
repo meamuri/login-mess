@@ -11,18 +11,20 @@ body {
 #logo {
     display: flex;    
     align-items: center;
-    flex-flow: column;    
+    flex-flow: column;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #centred {
     display: flex;
     align-items: center;
     flex-flow: column;
-    width: 480px;
+    width: 640px;
 }
 
 #form-container {
-    background-color: #ddd;
+    background-color: #ecf0f1;
     padding: 15px 15px 15px 15px;
-    border-radius: 15px;
+    border-radius: 6px;
 }
