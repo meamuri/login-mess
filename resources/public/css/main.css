@@ -8,6 +8,13 @@ body {
     justify-content: center;
 }
 
+#centred {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    width: 640px;
+}
+
 #logo {
     display: flex;    
     align-items: center;
@@ -16,11 +23,10 @@ body {
     margin-top: 10px;
 }
 
-#centred {
+#app-name {
     display: flex;
-    align-items: center;
     flex-flow: column;
-    width: 640px;
+    align-items: center;
 }
 
 #form-container {

@@ -12,7 +12,8 @@
     [:div#content
      [:div#logo 
       [:img {:style {:width 300 :height 150}}]]
-     [:h2 "An Application"]
+     [:div#app-name 
+      [:h2 "An Application"]]
      [:div#form-container {:style {:width 480 :height 150}}
       [:form#login-form
        [:label {:for "login-input"} "Username"]
